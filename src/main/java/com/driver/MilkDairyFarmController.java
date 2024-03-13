@@ -14,6 +14,7 @@ public class MilkDairyFarmController {
 
     public MilkDairyFarmController(MilkDairyFarmService milkDairyFarmService) {
     	// your code goes here
+        this.milkDairyFarmService=milkDairyFarmService;
     }
 
     @PostMapping("/addcow")

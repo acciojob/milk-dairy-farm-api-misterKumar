@@ -10,6 +10,8 @@ public class Cow {
 
     public Cow(String name) {
     	// your code goes here
+        this.name=name;
+        this.milkProduction=0;
     }
 
     // Getters and Setters
@@ -21,6 +23,7 @@ public class Cow {
 
     public void setId(int id) {
     	// your code goes here
+        this.id=id;
     }
 
     public String getName() {
@@ -30,6 +33,7 @@ public class Cow {
 
     public void setName(String name) {
     	// your code goes here
+        this.name=name;
     }
 
     public double getMilkProduction() {
@@ -39,5 +43,6 @@ public class Cow {
 
     public void setMilkProduction(double milkProduction) {
     	// your code goes here
+        this.milkProduction=milkProduction;
     }
 }

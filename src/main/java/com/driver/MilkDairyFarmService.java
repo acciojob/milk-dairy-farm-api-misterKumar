@@ -12,10 +12,14 @@ public class MilkDairyFarmService {
 
     public MilkDairyFarmService() {
     	// your code goes here
+        this.cowDatabase=new HashMap<>();
+        this.nextCowId=1;//assigning starting id for cow from 1
     }
 
     public Cow addCow(Cow cow) {
     	// your code goes here
+        cow.setId(nextCowId++);
+        cowDatabase.put(cow.getId(),cow);
         return cow;
     }
 
